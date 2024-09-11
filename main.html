@@ -16,7 +16,7 @@
             <label for="email" id="email-label">Email:<input id="email" type="email" name="email" placeholder="name@gmail.com" required></label>
             <label for="number" id="number-label">Age:<input id="number" type="number" name="Phone" placeholder="Age" min="18" max="90"></label>
             <label for="dropdown ">Which best describes you?
-                <select id="dropdown " name="dropdown" required>
+                <select id="dropdown" name="dropdown" required>
                     <option>select</option>
                     <option>Student</option>
                     <option>Full-time Employed</option>
@@ -28,12 +28,22 @@
         <fieldset>
                 <!--Giving inputs the same name groups them together-->
                 <legend>How often do you exercise?</legend>
-                <label for="option1">Regularly <input id="option1" type="radio" name="option"></label>
-                <label for="option2">Sometimes<input id="option2" type="radio" name="option"></label>
-                <label for="option3">Never<input id="option3" type="radio" name="option"></label>
-            
+                <label for="option1"><input id="option1" type="radio" name="option" value="option" checked>Regularly</label>
+                <label for="option2"><input id="option2" type="radio" name="option" value="option">Sometimes</label>
+                <label for="option3"><input id="option3" type="radio" name="option" value="option">Never</label>
         </fieldset>
-        <input id="sibmit" type="submit" name="submit">
+        <fieldset>
+            <legend>What kind of training do you do? Select all that apply.</legend>
+            <label for="walking"><input id="walking" type="checkbox" value="walking">Walking</label>
+            <label for="running"><input id="running" type="checkbox" value="running">Running</label>
+            <label for="strength"><input id="strength" type="checkbox" value="strength">Strength Training</label>
+            <label for="cycling"><input id="cycling" type="checkbox" value="cycling">Cycling</label>
+        </fieldset>
+        <fieldset>
+            <legend>Is there anything you would like to add?</legend>
+            <label for="comments">Comments:<textarea id="comments" placeholder="Long runs" rows="3" cols="25" ></textarea></label>
+        </fieldset>
+        <input id="submit" type="submit" name="submit">
     </form>
 </body>
 </html>
