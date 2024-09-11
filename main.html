@@ -11,10 +11,29 @@
     <p id="description">My New Survey</p>
     <form id="survey-form">
         <fieldset>
-            <label for="name">Name<input id="name" type="text" required></label>
-            <label for="email">Email<input id="email" type="email" required></label>
-            <label for="number">Phone Number<input id="number" type="number" pattern="[0-]{0,}"></label>
+            <legend>Details</legend>
+            <label for="name" id="name-label">Name:<input id="name" type="text" name="person-name" placeholder="Name" required></label>
+            <label for="email" id="email-label">Email:<input id="email" type="email" name="email" placeholder="name@gmail.com" required></label>
+            <label for="number" id="number-label">Age:<input id="number" type="number" name="Phone" placeholder="Age" min="18" max="90"></label>
+            <label for="dropdown ">Which best describes you?
+                <select id="dropdown " name="dropdown" required>
+                    <option>select</option>
+                    <option>Student</option>
+                    <option>Full-time Employed</option>
+                    <option>Part-time Employed</option>
+                    <option>Retired</option>
+                </select>
+            </label>
         </fieldset>
+        <fieldset>
+                <!--Giving inputs the same name groups them together-->
+                <legend>How often do you exercise?</legend>
+                <label for="option1">Regularly <input id="option1" type="radio" name="option"></label>
+                <label for="option2">Sometimes<input id="option2" type="radio" name="option"></label>
+                <label for="option3">Never<input id="option3" type="radio" name="option"></label>
+            
+        </fieldset>
+        <input id="sibmit" type="submit" name="submit">
     </form>
 </body>
 </html>
